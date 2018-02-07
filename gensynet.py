@@ -319,8 +319,6 @@ def randomize_subnet_breakdown(count, minimum, maximum):
         if subnets[s] < maximum:
             subnets[s] += 1
             nodes_left -= 1
-        elif s in subnets:
-            subnets.remove(s)
     return subnets
 
 
